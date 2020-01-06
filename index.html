@@ -56,19 +56,19 @@ L.geoJson(districts, {
             
             if (feature.properties.senate_social_web === "") {
                 document.getElementById("own_site").innerHTML = ''}
-            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener">Personal website</a>'}
+            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener" target="_blank">Personal website</a>'}
 
             if (feature.properties.senate_social_fb === "") {
                 document.getElementById("facebook").innerHTML = ''}
-            else {document.getElementById("facebook").innerHTML = '<a href="' + feature.properties.senate_social_fb + '" rel="noopener">Facebook</a>'}
+            else {document.getElementById("facebook").innerHTML = '<a href="' + feature.properties.senate_social_fb + '" rel="noopener" target="_blank">Facebook</a>'}
 
             if (feature.properties.senate_social_twitter === "") {
                 document.getElementById("twitter").innerHTML = ''}
-            else {document.getElementById("twitter").innerHTML = '<a href="' + feature.properties.senate_social_twitter + '" rel="noopener">Twitter</a>'}
+            else {document.getElementById("twitter").innerHTML = '<a href="' + feature.properties.senate_social_twitter + '" rel="noopener" target="_blank">Twitter</a>'}
 
             if (feature.properties.senate_social_insta === "") {
                 document.getElementById("instagram").innerHTML = ''}
-            else {document.getElementById("instagram").innerHTML = '<a href="' + feature.properties.senate_social_insta + '" rel="noopener">Instagram</a>'}
+            else {document.getElementById("instagram").innerHTML = '<a href="' + feature.properties.senate_social_insta + '" rel="noopener" target="_blank">Instagram</a>'}
                 
         })
     }
