@@ -56,7 +56,7 @@ L.geoJson(districts, {
             
             if (feature.properties.senate_social_web === "") {
                 document.getElementById("own_site").innerHTML = ''}
-            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener" target="_blank">Personal website</a>'}
+            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener">Personal website</a>'}
 
             if (feature.properties.senate_social_fb === "") {
                 document.getElementById("facebook").innerHTML = ''}
