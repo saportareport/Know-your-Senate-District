@@ -52,11 +52,11 @@ L.geoJson(districts, {
                 feature.properties.senate_social_party + '<br>' +
                 'Office: ' + feature.properties.senate_social_office_phone + '<br>' +
                 'Official e-mail: ' + feature.properties.senate_social_office_email + '<br>' +
-                '<a href="' + feature.properties.senate_social_url + '" rel="noopener">Official website</a>'
+                '<a href="' + feature.properties.senate_social_url + '" rel="noopener" target="_blank">Official website</a>'
             
             if (feature.properties.senate_social_web === "") {
                 document.getElementById("own_site").innerHTML = ''}
-            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener">Personal website</a>'}
+            else {document.getElementById("own_site").innerHTML = '<a href="' + feature.properties.senate_social_web + '" rel="noopener" target="_blank">Personal website</a>'}
 
             if (feature.properties.senate_social_fb === "") {
                 document.getElementById("facebook").innerHTML = ''}
